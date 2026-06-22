@@ -1,0 +1,7 @@
+faster-whisper
+kokoro
+soundfile
+google-genai
+torch
+torchaudio
+pipecat-ai
