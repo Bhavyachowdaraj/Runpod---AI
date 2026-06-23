@@ -1,0 +1,127 @@
+[
+  {
+    "instruction": "You are a browser automation agent. Given a web task, output the sequence of actions to complete it.",
+    "input": "Task: Search for product reviews on Amazon\nCurrent page: amazon.com\nAvailable elements: search_bar, search_button, category_dropdown",
+    "output": "Action: click('search_bar')\nAction: type('wireless earbuds reviews')\nAction: press('Enter')\nAction: wait(2)\nAction: scrollTo('middle')\nAction: click('product_review_sort')"
+  },
+  {
+    "instruction": "You are a browser automation agent. Given a web task, output the sequence of actions to complete it.",
+    "input": "Task: Book a hotel room\nCurrent page: booking.com\nAvailable elements: destination_input, check_in_date, check_out_date, guests_selector, search_button",
+    "output": "Action: click('destination_input')\nAction: type('Paris')\nAction: press('Enter')\nAction: click('check_in_date')\nAction: select('2024-03-15')\nAction: click('check_out_date')\nAction: select('2024-03-20')\nAction: click('guests_selector')\nAction: select('2 adults')\nAction: click('search_button')\nAction: wait(3)"
+  },
+  {
+    "instruction": "You are a browser automation agent. Given a web task, output the sequence of actions to complete it.",
+    "input": "Task: Create a new GitHub repository\nCurrent page: github.com/new\nAvailable elements: repo_name_input, description_input, public_radio, private_radio, create_button",
+    "output": "Action: click('repo_name_input')\nAction: type('my-awesome-project')\nAction: click('description_input')\nAction: type('A cool new project for automating tasks')\nAction: click('private_radio')\nAction: click('create_button')\nAction: wait(2)\nAction: verify('repo_created')"
+  },
+  {
+    "instruction": "You are a browser automation agent. Given a web task, output the sequence of actions to complete it.",
+    "input": "Task: Send an email\nCurrent page: gmail.com/compose\nAvailable elements: to_field, subject_field, body_field, send_button",
+    "output": "Action: click('to_field')\nAction: type('john.doe@example.com')\nAction: click('subject_field')\nAction: type('Meeting Tomorrow')\nAction: click('body_field')\nAction: type('Hi John, Looking forward to our meeting tomorrow at 2pm. See you then!')\nAction: click('send_button')\nAction: wait(1)\nAction: verify('email_sent')"
+  },
+  {
+    "instruction": "You are a browser automation agent. Given a web task, output the sequence of actions to complete it.",
+    "input": "Task: Apply filters to image gallery\nCurrent page: photogallery.com\nAvailable elements: filter_dropdown, date_range, tag_selector, apply_button",
+    "output": "Action: click('filter_dropdown')\nAction: select('Date Range')\nAction: click('date_range')\nAction: select('Last 30 days')\nAction: click('tag_selector')\nAction: type('vacation')\nAction: press('Enter')\nAction: click('apply_button')\nAction: wait(1)\nAction: scrollTo('middle')"
+  },
+  {
+    "instruction": "You are a browser automation agent. Given a web task, output the sequence of actions to complete it.",
+    "input": "Task: Create account on new website\nCurrent page: signup_page\nAvailable elements: name_field, email_field, password_field, confirm_password, terms_checkbox, signup_button",
+    "output": "Action: click('name_field')\nAction: type('Jane Smith')\nAction: click('email_field')\nAction: type('jane.smith@email.com')\nAction: click('password_field')\nAction: type('SecurePass123!')\nAction: click('confirm_password')\nAction: type('SecurePass123!')\nAction: click('terms_checkbox')\nAction: click('signup_button')\nAction: wait(2)\nAction: verify('account_created')"
+  },
+  {
+    "instruction": "You are a browser automation agent. Given a web task, output the sequence of actions to complete it.",
+    "input": "Task: Schedule a meeting\nCurrent page: calendar.google.com\nAvailable elements: create_event_button, title_field, date_picker, time_picker, add_guests, save_button",
+    "output": "Action: click('create_event_button')\nAction: wait(0.5)\nAction: click('title_field')\nAction: type('Team Standup')\nAction: click('date_picker')\nAction: select('2024-03-20')\nAction: click('time_picker')\nAction: select('09:00')\nAction: click('add_guests')\nAction: type('team@company.com')\nAction: press('Enter')\nAction: click('save_button')\nAction: wait(1)\nAction: verify('event_created')"
+  },
+  {
+    "instruction": "You are a browser automation agent. Given a web task, output the sequence of actions to complete it.",
+    "input": "Task: Export data to CSV\nCurrent page: analytics_dashboard\nAvailable elements: export_button, format_dropdown, date_range_picker, download_button",
+    "output": "Action: click('export_button')\nAction: wait(0.5)\nAction: click('format_dropdown')\nAction: select('CSV')\nAction: click('date_range_picker')\nAction: select('Last Quarter')\nAction: click('download_button')\nAction: wait(3)\nAction: verify('download_started')"
+  },
+  {
+    "instruction": "You are a browser automation agent. Given a web task, output the sequence of actions to complete it.",
+    "input": "Task: Add items to shopping list\nCurrent page: grocery_app/home\nAvailable elements: search_bar, add_item_button, quantity_selector, list_name",
+    "output": "Action: click('search_bar')\nAction: type('milk')\nAction: press('Enter')\nAction: wait(0.5)\nAction: click('add_item_button')\nAction: click('quantity_selector')\nAction: select('2')\nAction: click('search_bar')\nAction: type('bread')\nAction: press('Enter')\nAction: click('add_item_button')\nAction: verify('items_added')"
+  },
+  {
+    "instruction": "You are a browser automation agent. Given a web task, output the sequence of actions to complete it.",
+    "input": "Task: Comment on a blog post\nCurrent page: blog_post_page\nAvailable elements: comment_textarea, name_field, email_field, submit_button",
+    "output": "Action: scrollTo('comment_section')\nAction: click('comment_textarea')\nAction: type('Great article! Thanks for sharing these insights.')\nAction: click('name_field')\nAction: type('Alex Johnson')\nAction: click('email_field')\nAction: type('alex@email.com')\nAction: click('submit_button')\nAction: wait(1)\nAction: verify('comment_posted')"
+  },
+  {
+    "instruction": "You are a browser automation agent. Given a web task, output the sequence of actions to complete it.",
+    "input": "Task: Change account settings\nCurrent page: settings_page\nAvailable elements: privacy_tab, notifications_tab, theme_dropdown, save_changes",
+    "output": "Action: click('privacy_tab')\nAction: wait(0.3)\nAction: click('toggle_profile_visibility')\nAction: click('notifications_tab')\nAction: click('email_notifications_checkbox')\nAction: click('theme_dropdown')\nAction: select('Dark Mode')\nAction: click('save_changes')\nAction: wait(1)\nAction: verify('settings_saved')"
+  },
+  {
+    "instruction": "You are a browser automation agent. Given a web task, output the sequence of actions to complete it.",
+    "input": "Task: Upload profile picture\nCurrent page: profile_settings\nAvailable elements: upload_button, file_input, crop_button, save_button",
+    "output": "Action: click('upload_button')\nAction: select_file('profile_photo.jpg')\nAction: wait(1)\nAction: drag_crop_box(100, 100, 300, 300)\nAction: click('crop_button')\nAction: wait(0.5)\nAction: click('save_button')\nAction: verify('photo_uploaded')"
+  },
+  {
+    "instruction": "You are a browser automation agent. Given a web task, output the sequence of actions to complete it.",
+    "input": "Task: Browse Netflix and add to list\nCurrent page: netflix.com/browse\nAvailable elements: search_icon, movie_cards, add_to_list_button, genre_dropdown",
+    "output": "Action: click('search_icon')\nAction: type('science fiction')\nAction: press('Enter')\nAction: wait(2)\nAction: scrollTo('middle')\nAction: hover('movie_card_1')\nAction: click('add_to_list_button')\nAction: wait(0.5)\nAction: verify('added_to_list')"
+  },
+  {
+    "instruction": "You are a browser automation agent. Given a web task, output the sequence of actions to complete it.",
+    "input": "Task: Play music playlist\nCurrent page: spotify.com\nAvailable elements: search_bar, play_button, playlist_card, shuffle_button",
+    "output": "Action: click('search_bar')\nAction: type('workout playlist')\nAction: press('Enter')\nAction: wait(1)\nAction: click('playlist_card')\nAction: wait(1)\nAction: click('shuffle_button')\nAction: verify('music_playing')"
+  },
+  {
+    "instruction": "You are a browser automation agent. Given a web task, output the sequence of actions to complete it.",
+    "input": "Task: Order food delivery\nCurrent page: food_delivery_app\nAvailable elements: search_restaurant, menu_items, add_to_cart, checkout_button, delivery_address",
+    "output": "Action: click('search_restaurant')\nAction: type('Italian')\nAction: press('Enter')\nAction: wait(1)\nAction: click('restaurant_1')\nAction: wait(1)\nAction: click('menu_item_pizza')\nAction: click('add_to_cart')\nAction: click('checkout_button')\nAction: click('delivery_address')\nAction: type('123 Main St, Apt 4')\nAction: click('confirm_order')\nAction: verify('order_placed')"
+  },
+  {
+    "instruction": "You are a browser automation agent. Given a web task, output the sequence of actions to complete it.",
+    "input": "Task: Check flight status\nCurrent page: airline_website\nAvailable elements: flight_input, date_picker, search_button, flight_results",
+    "output": "Action: click('flight_input')\nAction: type('AA123')\nAction: click('date_picker')\nAction: select('today')\nAction: click('search_button')\nAction: wait(2)\nAction: read('flight_status')\nAction: verify('status_displayed')"
+  },
+  {
+    "instruction": "You are a browser automation agent. Given a web task, output the sequence of actions to complete it.",
+    "input": "Task: Update credit card info\nCurrent page: payment_settings\nAvailable elements: card_number, expiry_date, cvv, billing_address, save_button",
+    "output": "Action: click('card_number')\nAction: type('4111111111111111')\nAction: click('expiry_date')\nAction: type('12/25')\nAction: click('cvv')\nAction: type('123')\nAction: click('billing_address')\nAction: type('456 Billing St')\nAction: click('save_button')\nAction: wait(1)\nAction: verify('card_updated')"
+  },
+  {
+    "instruction": "You are a browser automation agent. Given a web task, output the sequence of actions to complete it.",
+    "input": "Task: Request time off\nCurrent page: hr_portal\nAvailable elements: time_off_tab, start_date, end_date, reason_field, submit_button",
+    "output": "Action: click('time_off_tab')\nAction: wait(0.3)\nAction: click('start_date')\nAction: select('2024-04-01')\nAction: click('end_date')\nAction: select('2024-04-05')\nAction: click('reason_field')\nAction: type('Family vacation')\nAction: click('submit_button')\nAction: wait(1)\nAction: verify('request_submitted')"
+  },
+  {
+    "instruction": "You are a browser automation agent. Given a web task, output the sequence of actions to complete it.",
+    "input": "Task: Search documentation and find example\nCurrent page: docs.python.org\nAvailable elements: search_input, module_list, search_results, code_blocks",
+    "output": "Action: click('search_input')\nAction: type('asyncio tutorial')\nAction: press('Enter')\nAction: wait(1)\nAction: click('search_result_1')\nAction: wait(1)\nAction: scrollTo('code_example')\nAction: read('code_block')\nAction: verify('example_found')"
+  },
+  {
+    "instruction": "You are a browser automation agent. Given a web task, output the sequence of actions to complete it.",
+    "input": "Task: Join video call\nCurrent page: zoom.meeting_link\nAvailable elements: join_button, name_input, audio_toggle, video_toggle, enter_button",
+    "output": "Action: click('join_button')\nAction: wait(1)\nAction: click('name_input')\nAction: type('John Participant')\nAction: click('audio_toggle')\nAction: click('video_toggle')\nAction: click('enter_button')\nAction: wait(2)\nAction: verify('joined_meeting')"
+  },
+  {
+    "instruction": "You are a browser automation agent. Given a web task, output the sequence of actions to complete it.",
+    "input": "Task: Complete survey\nCurrent page: survey_form\nAvailable elements: question_1_rating, question_2_text, submit_survey, progress_bar",
+    "output": "Action: click('question_1_rating_5')\nAction: scrollTo('question_2')\nAction: click('question_2_text')\nAction: type('The service was excellent and very helpful.')\nAction: click('question_3_yes')\nAction: scrollTo('submit_survey')\nAction: click('submit_survey')\nAction: wait(1)\nAction: verify('survey_submitted')"
+  },
+  {
+    "instruction": "You are a browser automation agent. Given a web task, output the sequence of actions to complete it.",
+    "input": "Task: Bookmark important page\nCurrent page: research_article\nAvailable elements: bookmark_icon, bookmark_folder, add_tag, save_button",
+    "output": "Action: click('bookmark_icon')\nAction: wait(0.3)\nAction: click('bookmark_folder')\nAction: select('Research')\nAction: click('add_tag')\nAction: type('machine-learning')\nAction: press('Enter')\nAction: click('save_button')\nAction: verify('page_bookmarked')"
+  },
+  {
+    "instruction": "You are a browser automation agent. Given a web task, output the sequence of actions to complete it.",
+    "input": "Task: Renew subscription\nCurrent page: account_subscription\nAvailable elements: renew_button, plan_dropdown, payment_method, confirm_renewal",
+    "output": "Action: click('renew_button')\nAction: wait(0.5)\nAction: click('plan_dropdown')\nAction: select('Annual Plan')\nAction: click('payment_method')\nAction: select('Credit Card ending 1234')\nAction: click('confirm_renewal')\nAction: wait(2)\nAction: verify('subscription_renewed')"
+  },
+  {
+    "instruction": "You are a browser automation agent. Given a web task, output the sequence of actions to complete it.",
+    "input": "Task: Share content to social media\nCurrent page: blog_article\nAvailable elements: share_button, platform_icons, message_input, post_button",
+    "output": "Action: scrollTo('share_section')\nAction: click('share_button')\nAction: wait(0.3)\nAction: click('twitter_icon')\nAction: click('message_input')\nAction: type('Check out this amazing article!')\nAction: click('post_button')\nAction: wait(1)\nAction: verify('content_shared')"
+  },
+  {
+    "instruction": "You are a browser automation agent. Given a web task, output the sequence of actions to complete it.",
+    "input": "Task: Edit document online\nCurrent page: docs.google.com\nAvailable elements: text_cursor, formatting_toolbar, comment_button, share_button",
+    "output": "Action: click('paragraph_3')\nAction: type(' This is additional text.')\nAction: select_text('additional')\nAction: click('bold_button')\nAction: scrollTo('comment_section')\nAction: click('comment_button')\nAction: type('Please review this section')\nAction: click('submit_comment')"
+  }
+]
